@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Faraz Ahmed | Java Backend Developer</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- ADDED: Devicon CDN for skill logos -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link rel="stylesheet" href="style.css">
+		<link rel="icon" href="2.png">
+    </head>
+    <body class="text-primary">
+        <nav class="shadow-lg">
+            <div class="container mx-auto px-4 flex items-center justify-between">
+                <!-- This logo's src will be changed by JavaScript -->
+                <a href="#home">
+                    <img id="logoImage" src="1.png" alt="Faraz Ahmed Logo" class="h-20 w-auto rounded-lg transition-transform duration-300 hover:scale-105">
+
+                </a>
+                <div class="hidden md:flex items-center gap-2">
+                    <a href="#home" class="px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300">Home</a>
+                    <a href="#skills" class="px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300">Skills</a>
+                    <a href="#experience" class="px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300">Experience</a>
+                    <a href="#certifications" class="px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300">Certifications</a>
+                    <a href="#projects" class="px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300">Projects</a>
+                    <a href="#contact" class="px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300">Contact</a>
+                </div>
+                <div class="flex items-center">
+                    <button id="darkModeToggle" class="p-2 rounded-full hover:scale-110 transition-transform">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="mobileMenuButton" class="md:hidden focus:outline-none p-2 ml-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                    <a href="#home" class="block px-3 py-2 hover:bg-black/20 rounded-md text-primary">Home</a>
+                    <a href="#skills" class="block px-3 py-2 hover:bg-black/20 rounded-md text-primary">Skills</a>
+                    <a href="#experience" class="block px-3 py-2 hover:bg-black/20 rounded-md text-primary">Experience</a>
+                    <a href="#certifications" class="block px-3 py-2 hover:bg-black/20 rounded-md text-primary">Certifications</a>
+                    <a href="#projects" class="block px-3 py-2 hover:bg-black/20 rounded-md text-primary">Projects</a>
+                    <a href="#contact" class="block px-3 py-2 hover:bg-black/20 rounded-md text-primary">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <!-- MODIFIED SECTION -->
+        <section id="home">
+            <!-- Floating Tech Icons -->
+            <i class="fab fa-python tech-icon" style="top: 15%; left: 10%; animation-delay: 0s;"></i>
+            <i class="fab fa-java tech-icon" style="top: 70%; left: 15%; font-size: 4rem; animation-delay: 3s;"></i>
+            <i class="fab fa-android tech-icon" style="top: 25%; right: 10%; animation-delay: 6s;"></i>
+            <i class="fab fa-react tech-icon" style="bottom: 15%; right: 15%; font-size: 3.5rem; animation-delay: 9s;"></i>
+            <i class="fas fa-database tech-icon" style="bottom: 20%; left: 25%; font-size: 2.5rem; animation-delay: 12s;"></i>
+            <div class="container mx-auto px-6 py-12 md:py-24 relative z-10">
+                <div class="flex flex-col md:flex-row items-center justify-center">
+                    <div class="md:w-1/2 mb-12 md:mb-0 text-center md:text-left">
+                        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 text-white">
+                            Hi, I'm <span style="color: var(--accent-orange);">Faraz Ahmed</span>
+                        </h1>
+                        <h2 class="text-2xl md:text-4xl font-semibold mb-6 text-white">
+                            <span id="typed-text"></span>
+                        </h2>
+						
+                        <p class="text-lg text-white/90 mb-8 max-w-lg mx-auto md:mx-0"> A highly motivated, a quick learner, and passionate about writing clean, efficient, and maintainable code.</p>
+                        <div class="flex justify-center md:justify-start space-x-4">
+                            <a href="#contact" class="bg-[--accent-orange] hover:bg-[--accent-red] text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg">Get
+                            In Touch</a>
+                            <a href="#projects" class="border border-white hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 shadow-lg">View
+                            Projects</a>
+                        </div>
+                        <!-- ADDED SOCIAL LINKS HERE -->
+                        <div class="flex justify-center md:justify-start space-x-6 mt-8">
+                            <a href="https://www.linkedin.com/in/faraz-ahmed-b58404271/" target="_blank" class="text-white/80 hover:text-white text-2xl transition-colors duration-300">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                          
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center mt-12 md:mt-0 profile-image-container">
+                        <div class="relative w-64 h-64 md:w-80 md:h-80 profile-image-wrapper">
+                            <div class="absolute inset-0 rounded-full overflow-hidden border-4 border-[--accent-orange] z-10 shadow-2xl">
+                                <img src="faraz.jpg" alt="Faraz Ahmed" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+            Technical <span class="accent-text">Toolkit</span>
+        </h2>
+    </div>
+    <div class="skills-container space-y-6">
+        <div class="skills-marquee">
+            <div class="skill-pill">
+                <i class="devicon-java-plain text-2xl"></i>
+                <span>Java</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-spring-plain text-2xl"></i>
+                <span>Spring Framework</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-spring-plain text-2xl"></i>
+                <span>Spring Boot</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-spring-plain text-2xl"></i>
+                <span>Spring MVC</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-spring-plain text-2xl"></i>
+                <span>Spring Security (JWT, RBAC)</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-spring-plain text-2xl"></i>
+                <span>Spring JDBC</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-oracle-original text-2xl"></i>
+                <span>Oracle</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-mysql-plain text-2xl"></i>
+                <span>JEE (Servlets, JSP, JSTL)</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-postgresql-plain text-2xl"></i>
+                <span>RESTful APIs</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-java-plain text-2xl"></i>
+                <span>Multi-Modular Projects</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-docker-plain text-2xl"></i>
+                <span>Docker</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-git-plain text-2xl"></i>
+                <span>Version Control</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-java-plain text-2xl"></i>
+                <span>Multithreading</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-java-plain text-2xl"></i>
+                <span>Exception Handling</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-mysql-plain text-2xl"></i>
+                <span>SQL</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-firebase-plain text-2xl"></i>
+                <span>Firebase</span>
+            </div>
+        </div>
+
+        <div class="skills-marquee marquee-reverse">
+            <div class="skill-pill">
+                <i class="devicon-java-plain text-2xl"></i>
+                <span>JSP</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-javascript-plain text-2xl"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-html5-plain text-2xl"></i>
+                <i class="devicon-css3-plain text-2xl"></i>
+                <span>HTML/CSS</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-git-plain text-2xl"></i>
+                <i class="devicon-github-original text-2xl"></i>
+                <span>Git & GitHub</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-intellij-plain text-2xl"></i>
+                <span>IntelliJ IDEA</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-eclipse-plain text-2xl"></i>
+                <span>Eclipse</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-androidstudio-plain text-2xl"></i>
+                <span>Android Studio</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-spring-plain text-2xl"></i>
+                <span>Spring Data JPA</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-postgresql-plain text-2xl"></i>
+                <span>PostgreSQL</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-maven-plain text-2xl"></i>
+                <span>Maven</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-vscode-plain text-2xl"></i>
+                <span>VS Code</span>
+            </div>
+            <div class="skill-pill">
+                <i class="devicon-apache-plain text-2xl"></i>
+                <span>Tomcat Server</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+             <section id="experience">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                    Professional <span class="accent-text">Journey</span>
+                </h2>
+                <div class="relative max-w-5xl mx-auto">
+                    <div class="timeline-line hidden md:block"></div>
+                    <div class="space-y-12">
+                        <!-- Work Experience -->
+                        <div class="timeline-item relative md:grid md:grid-cols-2 md:gap-x-12">
+                            <div class="timeline-dot hidden md:block"></div>
+                            <div class="md:text-right">
+                                <h3 class="text-xl font-bold text-primary">Software developer</h3>
+                                <p class="text-secondary font-medium">Tech Fira</p>
+                                <p class="font-semibold accent-text">Mar 2025 - Current</p>
+                            </div>
+                            <div>
+                                <div class="timeline-content glass-card mt-4 md:mt-0">
+                                    <p class="text-secondary">Software Engineer Intern at Tech Fira, remotely developing and contributing to software projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Education -->
+                        <div class="timeline-item relative md:grid md:grid-cols-2 md:gap-x-12">
+                            <div class="timeline-dot hidden md:block"></div>
+                            <div class="md:col-start-2">
+                                <h3 class="text-xl font-bold text-primary">Bachelor's of Computer Science</h3>
+                                <p class="text-secondary font-medium">Sindh University</p>
+                                <p class="font-semibold accent-text">2023 - Current</p>
+                            </div>
+                            <div class="md:col-start-1 md:row-start-1 md:text-right">
+                                <div class="timeline-content glass-card mt-4 md:mt-0">
+                                    <p class="text-secondary">Currently pursuing a Bachelor's degree in Computer Science, gaining a strong foundation in software engineering principles and practices.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Training -->
+                        <div class="timeline-item relative md:grid md:grid-cols-2 md:gap-x-12">
+                            <div class="timeline-dot hidden md:block"></div>
+                            <div class="md:text-right">
+                                <h3 class="text-xl font-bold text-primary">Advanced Java Technology</h3>
+                                <p class="text-secondary font-medium">Bell Labs</p>
+                                <p class="font-semibold accent-text">Sep 2019 - Feb 2021</p>
+                            </div>
+                            <div>
+                                <div class="timeline-content glass-card mt-4 md:mt-0">
+                                    <p class="text-secondary">Completed intensive training in Advanced Java, including Spring Framework, Spring Boot, and JEE, at Sindhiana School Hyderabad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<section id="certifications">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Licenses & <span
+                    class="accent-text">Certifications</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="cert-card glass-card">
+                    <div class="flex items-start gap-4"><img src="https://cdn.brandfetch.io/aeo.com.pk/w/321/h/321?c=1idxwsgjotm85J1gZkW"
+                            alt="Stanford Logo" class="h-16 w-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-primary">IELTS</h3>
+                            <p class="text-sm text-secondary">AEO Pakistan</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-secondary my-4 flex-grow">My language skills, coupled with my field, position me to excel in IT industry. Excited to contribute my communication abilities to dynamic projects and collaborate with diverse teams.</p><a
+                        href="https://drive.google.com/file/d/1mY0XPQYYW0DzNjSycbWyWn6lZ38mNviv/view?usp=sharing" target="_blank"
+                        class="mt-auto w-full text-center bg-gradient-to-r from-[--accent-red] to-[--accent-orange] text-white px-4 py-2 rounded-md font-semibold hover:scale-105 transition-transform duration-300">View
+                        Credential</a>
+                </div>
+				<div class="cert-card glass-card">
+                    <div class="flex items-start gap-4"><img src="https://cdn.brandfetch.io/java.com/w/379/h/512/logo?c=1idxwsgjotm85J1gZkW"
+                            alt="Michigan Logo" class="h-16 w-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-primary">Java Basic to Advance</h3>
+                            <p class="text-sm text-secondary">Bell Labs</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-secondary my-4 flex-grow">This course spanned several months and provided a hands-on learning experience, enabling me to tackle real-world coding challenges and build robust Java applications..</p><a
+                        href="https://drive.google.com/file/d/1N5wQFBP9gjRqT3otAcDjli_yUDzBf5cj/view?usp=sharing" target="_blank"
+                        class="mt-auto w-full text-center bg-gradient-to-r from-[--accent-red] to-[--accent-orange] text-white px-4 py-2 rounded-md font-semibold hover:scale-105 transition-transform duration-300">View
+                        Credential</a>
+                </div>
+				<div class="cert-card glass-card">
+                    <div class="flex items-start gap-4"><img src="https://cdn.brandfetch.io/hp.com/w/512/h/512/logo?c=1idxwsgjotm85J1gZkW"
+                            alt="Meta Logo" class="h-16 w-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-primary">Data Science & Analytics</h3>
+                            <p class="text-sm text-secondary">HP</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-secondary my-4 flex-grow">Completed the HP LIFE Data Science & Analytics course, acquiring practical skills in data analysis, visualization, and decision-making to tackle real-world challenges.</p><a
+                        href="https://www.life-global.org/certificate/88067c6b-ff7f-4a73-af38-0d6823775f08" target="_blank"
+                        class="mt-auto w-full text-center bg-gradient-to-r from-[--accent-red] to-[--accent-orange] text-white px-4 py-2 rounded-md font-semibold hover:scale-105 transition-transform duration-300">View
+                        Credential</a>
+                </div>
+				<div class="cert-card glass-card">
+                    <div class="flex items-start gap-4"><img src="https://cdn.brandfetch.io/flutter.dev/w/414/h/512/symbol?c=1idxwsgjotm85J1gZkW"
+                            alt="DeepLearning.AI Logo" class="h-16 w-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-primary">Mobile Application Development(Flutter, Dart)</h3>
+                            <p class="text-sm text-secondary">MIT</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-secondary my-4 flex-grow">A foundational, Mobile Application Developement in Flutter and Dart, gained through my education at MIT (Management Institute of Technology). Passionate about creating innovative and user-friendly mobile solutions.</p><a
+                        href="https://drive.google.com/file/d/1QxjYVTzIe0-uQJAdZ4V2GAQmKuglL6du/view?usp=sharing" target="_blank"
+                        class="mt-auto w-full text-center bg-gradient-to-r from-[--accent-red] to-[--accent-orange] text-white px-4 py-2 rounded-md font-semibold hover:scale-105 transition-transform duration-300">View
+                        Credential</a>
+                </div>
+                <div class="cert-card glass-card">
+                    <div class="flex items-start gap-4"><img src="https://cdn.brandfetch.io/google.com/w/501/h/512/symbol?c=1idxwsgjotm85J1gZkW"
+                            alt="Bytewise Logo" class="h-16 w-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-primary">Fundamental of Digital Marketing</h3>
+                            <p class="text-sm text-secondary">Google</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-secondary my-4 flex-grow">Digital Marketing course, gaining a comprehensive understanding of key digital marketing concepts and strategies. Equipped with insights into SEO, SEM, social media, and more.</p><a
+                        href="https://drive.google.com/file/d/1ByLKO2A2f6_7HQVHYYAixvMH3F0ZoNzN/view?usp=sharing" target="_blank"
+                        class="mt-auto w-full text-center bg-gradient-to-r from-[--accent-red] to-[--accent-orange] text-white px-4 py-2 rounded-md font-semibold hover:scale-105 transition-transform duration-300">View
+                        Credential</a>
+                </div>
+                
+                
+                
+                <div class="cert-card glass-card">
+                    <div class="flex items-start gap-4"><img src="ibm_logo.png"
+                            alt="IBM Logo" class="h-16 w-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-primary">Data Science Orientation</h3>
+                            <p class="text-sm text-secondary">IBM</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-secondary my-4 flex-grow">An introduction to the core concepts and
+                        methodologies of the data science field.</p><a
+                        href="https://www.credly.com/badges/0c797eac-2f7a-470d-934e-98b5de82836b" target="_blank"
+                        class="mt-auto w-full text-center bg-gradient-to-r from-[--accent-red] to-[--accent-orange] text-white px-4 py-2 rounded-md font-semibold hover:scale-105 transition-transform duration-300">View
+                        Credential</a>
+                </div>
+                <div class="cert-card glass-card">
+                    <div class="flex items-start gap-4"><img src="https://cdn.brandfetch.io/idWvz5T3V7/w/400/h/400/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B"
+                            alt="Meta Logo" class="h-16 w-16 rounded-lg">
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-primary">Database Management with MySQL</h3>
+                            <p class="text-sm text-secondary">Meta</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-secondary my-4 flex-grow">Learned to design, create, and manage relational
+                        databases using MySQL.</p><a href="https://coursera.org/verify/E3UQYTEESWTW" target="_blank"
+                        class="mt-auto w-full text-center bg-gradient-to-r from-[--accent-red] to-[--accent-orange] text-white px-4 py-2 rounded-md font-semibold hover:scale-105 transition-transform duration-300">View
+                        Credential</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="projects">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
+                    My <span class="accent-text">Projects</span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                    <div class="project-card glass-card">
+                        <img src="sales treasure.png" alt="Sales Treasure Project" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-primary">Sales Treasure</h3>
+                        <p class="text-secondary mb-4 flex-grow">Currently collaborating with a team to build a sales platform with role-based access, secure authentication, and real-time inventory tracking.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto mb-4">
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">Spring Boot</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">Spring Security</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">RESTful APIs</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">Docker</span>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card">
+                        <img src="iu.png" alt="ATM Application Project" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-primary">ATM Application for Iqra University</h3>
+                        <p class="text-secondary mb-4 flex-grow">Developing an application with user interactions and secure access to banking services for students and staff.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto mb-4">
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">Java</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">OOP</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">Secure Access</span>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card">
+                        <img src="lms.png" alt="Library Management System Project" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-primary">Library Management System</h3>
+                        <p class="text-secondary mb-4 flex-grow">Successfully completed the backend development of the Library Management System for a seamless user experience.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto mb-4">
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">Java</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">Spring JDBC</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">Backend</span>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card">
+                        <img src="file transfer.png" alt="File Transfer App Project" class="w-full h-40 object-cover rounded-lg mb-4">
+                        <h3 class="text-xl font-semibold mb-2 text-primary">File Transfer App</h3>
+                        <p class="text-secondary mb-4 flex-grow">Completed a file transfer app, covering key features, technical implementation, and code highlights, including GUI and multithreading.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto mb-4">
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">Java</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">Multithreading</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-medium text-primary">GUI</span>
+                        </div>
+                    </div>
+					
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                    Get In <span class="accent-text">Touch</span>
+                </h2>
+                <div class="flex flex-col md:flex-row gap-8 items-start justify-center">
+                    <div class="w-full md:w-1/2 glass-card p-8 rounded-lg shadow-xl">
+                        <h3 class="text-2xl font-semibold mb-6 text-primary">Send Me a Message</h3>
+                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                            <input type="hidden" name="access_key" value="1775cee2-30ee-42fd-a249-93457f9b1f4c">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            <input type="hidden" name="subject" value="New Submission from Portfolio Site">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-secondary mb-2">Your
+                                Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Sheeraz" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-secondary mb-2">Your
+                                Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="sheeraz.@example.com" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-secondary mb-2">Your
+                                Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-input" placeholder="Type your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-[--accent-red] to-[--accent-orange] text-white px-6 py-3 rounded-md font-semibold hover:scale-105 transition-transform duration-300 shadow-lg">Send
+                            Message</button>
+                        </form>
+                    </div>
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <div class="glass-card p-6 rounded-lg shadow-md flex items-start space-x-4">
+                            <div class="bg-gradient-to-r from-[--accent-red] to-[--accent-orange] p-3 rounded-full flex-shrink-0 shadow-md">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-primary">Email Me</h4>
+                                <p class="text-secondary break-all">faraztech10@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="glass-card p-6 rounded-lg shadow-md flex items-start space-x-4">
+                            <div class="bg-gradient-to-r from-[--accent-red] to-[--accent-orange] p-3 rounded-full flex-shrink-0 shadow-md">
+                                <i class="fas fa-phone-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-primary">Call Me</h4>
+                                <p class="text-secondary">(+92) 3319042417</p>
+                            </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="bg-background-secondary py-8 text-center mt-12 border-t border-border-color">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-center space-x-6 mb-4">
+                    <a href="https://www.linkedin.com/in/faraz-ahmed-b58404271/" target="_blank" class="text-secondary hover:text-[--accent-red] text-2xl transition-colors duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="text-secondary">© 2024 Faraz Ahmed. All rights reserved.</p>
+            </div>
+        </footer>
+		<script src="https://web3forms.com/client/script.js" async defer></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
